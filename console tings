@@ -1,0 +1,46 @@
+-- is the roblok code i do for toda
+
+load model or somting: 
+--------------------------------------------------------
+for col = 1,10000 do -- optional loop !!!
+    local assetId = 420557286
+    local InsertService = game:GetService("InsertService")
+    local model = InsertService:LoadAsset(assetId)
+  
+    model.Parent = workspace
+    model.Name = "n00b"
+  wait(2)
+end 
+
+clear baseplate 2021 template ting:
+--------------------------------------------------------
+for i,v in pairs (game.Workspace:GetChildren()) do
+  pcall(function()
+     if v.Name ~= "Baseplate" and v.Name ~= "SpawnLocation" and v.Name ~= "[Yor Name Here!!]" then
+          v:Destroy()
+     end
+  end)
+end
+
+make snoopy folo me:
+--------------------------------------------------------
+while true do
+    local ducky = workspace.DuckXrec.Head.Position -- find me
+    workspace.snoopy.Snoopy.Humanoid:MoveTo(ducky) -- go to me
+  wait(0.1)
+end
+
+
+failed atempt to make all snoopy folow me:
+--------------------------------------------------------
+for i,v in pairs (workspace:GetChildren()) do 
+  pcall(function()
+    if v.Name == "n00b" then
+      pp = v:FindFirstChild("Snoopy") 
+      if pp then
+          local ducky = workspace.DuckXrec.Head.Position
+          workspace.snoopy.Snoopy.Humanoid:MoveTo(ducky)
+      end
+    end
+  end)
+end
